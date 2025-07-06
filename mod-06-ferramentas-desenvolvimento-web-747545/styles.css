@@ -1,0 +1,193 @@
+/* Reset de box-sizing para facilitar o layout */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+  /* Suaviza a rolagem entre seções */
+}
+
+/* Cabeçalho fixo no topo */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #333;
+  padding: 15px 0;
+  text-align: center;
+  z-index: 1000;
+}
+
+/* Estilo dos links do menu de navegação */
+nav a {
+  color: white;
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Fixando o conteúdo principal abaixo do header */
+main {
+  margin-top: 10px;
+}
+
+/* Estilo base para as seções */
+section {
+  min-height: 100vh;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Estilo ajustado para Seções com muito conteúdo com essa classe */
+.secao-grande {
+  justify-content: flex-start;
+}
+
+section:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+h2 {
+  font-size: 2em;
+  color: #222;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+p,
+li {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.voltar-topo {
+  margin-top: 40px;
+  text-align: right;
+}
+
+.voltar-topo a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* Foto Sobre mim */
+.foto-perfil {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.foto-perfil img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #333;
+}
+
+/* Texto Sobre mim */
+article {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+/* Nuvem de palavras */
+.nuvem-palavras {
+  text-align: center;
+  max-width: 800px;
+  margin: 20px auto 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.nuvem-palavras span {
+  display: inline-block;
+  font-weight: bold;
+}
+
+/* Portfólio */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.projeto-box {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.projeto-box:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.projeto-box img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.projeto-titulo {
+  padding: 15px;
+  font-weight: bold;
+  font-size: 1.1em;
+  background-color: #f8f8f8;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #e0e0e0;
+}
