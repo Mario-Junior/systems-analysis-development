@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio Pessoal</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <a href="#sobre">Sobre mim</a>
+      <a href="#formacao">Formação Educacional</a>
+      <a href="#portfolio">Portfólio</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="sobre" class="secao-grande">
+      <h2>Sobre mim</h2>
+
+      <div class="foto-perfil">
+        <a href="https://br.linkedin.com/in/mariojr/en" target="_blank"
+          title="Clique aqui para visitar o perfil de Mario Junior no LinkedIn"><img src="mario-junior.jpg"
+            alt="Foto de perfil de Mario Junior" oncontextmenu="return false;" ondragstart="return false;"></a>
+        <audio id="somPerfil" src="som-hover.mp3" preload="auto"></audio>
+      </div>
+
+      <article>
+        <p><em>"It's-a me, Mario!"</em> Sou Mário Júnior, um <em>"mineirim"</em> de Uberlândia - MG, que ama tecnologia
+          desde a infância e que, aos 40 anos, realizou o sonho de ingressar na área Tech.</p>
+      </article>
+
+      <!-- Nuvem de palavras com algumas palavras que me representam de forma resumida -->
+      <div class="nuvem-palavras">
+        <span style="font-size: 34px; color: #007bff;">Cristão</span>
+        <span style="font-size: 28px; color: #28a745;">Dev</span>
+        <span style="font-size: 22px; color: #e83e8c;">Back-end</span>
+        <span style="font-size: 30px; color: #fd7e14;">C#</span>
+        <span style="font-size: 20px; color: #6f42c1;">Tech</span>
+        <span style="font-size: 18px; color: #20c997;">.Net</span>
+        <span style="font-size: 26px; color: #17a2b8;">Ler</span>
+        <span style="font-size: 24px; color: #6610f2;">Esposo</span>
+        <span style="font-size: 20px; color: #dc3545;">Lógica</span>
+        <span style="font-size: 16px; color: #ffc107;">Pai</span>
+        <span style="font-size: 28px; color: #343a40;">Clean Code</span>
+        <span style="font-size: 22px; color: #0d6efd;">Cantar</span>
+        <span style="font-size: 18px; color: #198754;">Resiliência</span>
+        <span style="font-size: 26px; color: #ff123a;">Alegria</span>
+      </div>
+    </section>
+
+    <section id="formacao">
+      <h2>Formação Educacional</h2>
+      <p>Graduação em Análise e Desenvolvimento de Sistemas pela UNINTER Centro Universitário Internacional (2025-2027).
+      </p>
+      <p>Curso Técnico de Desenvolvimento Web Full Stack pela Trybe (2021-2022).</p>
+      <p>Pós-Gradução (MBA) em Gestão de Vendas e Trade Marketing pela ESAMC Uberlândia (2011-2013).</p>
+      <p>Graduação em Administração, Gestão e Negócios pela Universidade Federal de Uberlândia (2000-2006).</p>
+      <h3>Idiomas</h3>
+      <p>Inglês - Nível Intermediário.</p>
+      <div class="voltar-topo"><a href="#">↑ Voltar ao topo</a></div>
+    </section>
+
+    <section id="portfolio">
+      <h2>Portfólio</h2>
+      <div class="portfolio-grid">
+        <a href="https://beplanned.vercel.app" target="_blank" class="projeto-box">
+          <img src="beplanned-app.png" alt="Projeto 1 - BePlanned Planejador de Finanças">
+          <div class="projeto-titulo">Projeto 1 - BePlanned Planejador de Finanças</div>
+        </a>
+        <a href="https://tunes-io.vercel.app/" target="_blank" class="projeto-box">
+          <img src="tunes-io-app.png" alt="Projeto 2 - tunes-io Tocador de Música">
+          <div class="projeto-titulo">Projeto 2 - tunes-io Tocador de Música</div>
+        </a>
+      </div>
+      <div class="voltar-topo"><a href="#">↑ Voltar ao topo</a></div>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+      <div class="voltar-topo"><a href="#">↑ Voltar ao topo</a></div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mário Júnior. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+
+</body>
+
+</html>
